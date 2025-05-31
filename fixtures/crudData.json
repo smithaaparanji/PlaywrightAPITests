@@ -1,0 +1,39 @@
+{
+    "createUsers":{
+        "requestUrl":"https://reqres.in/api/users",
+        "requestData":{
+            "name": "morpheus",
+            "job": "leader"
+        },
+        "responseData":{
+            "name": "morpheus",
+            "job": "leader"
+        }
+    },
+    "updateUser" :{
+        "requestUrl":"https://reqres.in/api/users/2",
+        "requestData":{
+            "name": "morpheus",
+            "job": "zion resident"
+        },
+        "responseData":{
+            "name": "morpheus",
+            "job": "zion resident"
+        }
+    },
+    "patchUser":{
+        "requestUrl":"https://reqres.in/api/users/2",
+        "requestData":{
+            "name": "morpheus",
+            "job": "zion resident"
+        },
+        "responseData":{
+            "name": "morpheus",
+            "job": "zion resident",
+            "updatedAt": "2025-05-31T09:12:03.902Z"
+        }
+    },
+    "deleteUser":{
+        "requestUrl":"https://reqres.in/api/users/2"
+    }
+    }
