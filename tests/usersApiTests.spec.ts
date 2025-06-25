@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { singleResource, listUsers, singleUser, singleUserNotFound, listResources, singleResourceNotFound } from '../fixtures/userAndResource.json';
 
-describe('User and Resource Tests', () => {
+test.describe('User and Resource Tests', () => {
 
     test('List Users', async ({ request }) => {
         const getResponse = await request.get(listUsers.requestUrl,

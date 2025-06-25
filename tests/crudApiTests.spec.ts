@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import {createUsers,updateUser,patchUser,deleteUser } from '../fixtures/crudData.json';
 
-describe('CRUD Tests', () => {
+test.describe('CRUD Tests', () => {
 
     test('Create Users', async ({request }) => {
         const getResponse = await request.post(createUsers.requestUrl,{

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import {registerSuccessUser,registerUnsuccessUser,loginSuccessUser,loginFailedUser,delayedResponseUser } from '../fixtures/registerAndLogindata.json';
 
-describe('User registration and login tests', () => {
+test.describe('User registration and login tests', () => {
 
     test('User Registration successful', async ({request }) => {
         const getResponse = await request.post(registerSuccessUser.requestUrl,{
